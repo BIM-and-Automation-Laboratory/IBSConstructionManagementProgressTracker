@@ -12,7 +12,7 @@ import AuthRoute from './util/AuthRoute';
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import ForgeViewer from './pages/ForgeViewer';
+import ModelViewer from './pages/ForgeViewer';
 import Charts from './pages/Charts';
 import SinglePost from './pages/SinglePost';
 
@@ -24,7 +24,7 @@ function App() {
       <Container>
         <MenuBar/>
         <Route exact path = '/home' component = {Home}/>
-        <Route exact path = '/forge' component = {ForgeViewer}/>
+        <Route exact path = '/forge' component = {ModelViewer}/>
         <Route exact path = '/login' component = {Login}/>
         <Route exact path = '/register' component = {Register}/>
         <Route exact path = '/charts' component = {Charts}/>

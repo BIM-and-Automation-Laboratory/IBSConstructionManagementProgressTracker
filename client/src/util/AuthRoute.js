@@ -12,7 +12,7 @@ function AuthRoute({ component: Component, ...rest}) {
         <Route
             {...rest}
             render = {props =>
-            user ? <Redirect to = '/home'/> : <Component {...props}/> // understand this line to redirect user to login if trying to do anything without logging in
+            user ? <Redirect to = '/login'/> : <Component {...props}/> // understand this line to redirect user to login if trying to do anything without logging in
             }
         />
     )

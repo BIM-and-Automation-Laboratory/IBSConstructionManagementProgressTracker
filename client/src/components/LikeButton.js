@@ -40,12 +40,21 @@ function LikeButton({post: {id, likeCount, likes}}) {
     )
 
     return (
-        <Button as='div' labelPosition='right' onClick = {likePost}>
+        user? (
+            <Button as='div' labelPosition='right' onClick = {likePost}>
             {likeButton}
         <Label basic color = 'teal' pointing = 'left'>
             {likeCount}
         </Label>
         </Button>
+        ):(
+            <Button as='div' labelPosition='right'>
+            {likeButton}
+        <Label basic color = 'teal' pointing = 'left'>
+            {likeCount}
+        </Label>
+        </Button>
+        )
     )
 }
 
