@@ -29,6 +29,14 @@ const {gql} = require('apollo-server');
         username: String!
         createdAt: String!
     }
+    scalar Date
+    type Object {
+        id: ID!
+        weight: Int!
+        barcodeID: String!
+        registeredOn: Date
+        installedOn: Date
+    }
     input RegisterInput {
         username: String!
         password: String!
@@ -38,6 +46,7 @@ const {gql} = require('apollo-server');
     type Query {
         getPosts: [Post]
         getPost(postId: ID!): Post
+        getObjects: [Object]
     }
     type Mutation{
         register(registerInput: RegisterInput): User!

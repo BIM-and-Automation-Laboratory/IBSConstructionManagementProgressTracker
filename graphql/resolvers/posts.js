@@ -1,6 +1,6 @@
 const { AuthenticationError, UserInputError } = require('apollo-server-errors');
 const Post = require('../../models/Post');
-const checkAuth = require('../../util/checkAuth')
+const checkAuth = require('../../util/checkAuth');
 
 module.exports = {
     Query: {
@@ -23,7 +23,7 @@ module.exports = {
             } catch (err) {
                 throw new Error(err);
             }
-        }
+        },
     },
 
 Mutation: {

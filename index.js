@@ -36,7 +36,6 @@ const config = require('./config');
     
 if (config.FORGE_CREDENTIALS.client_id == null || config.FORGE_CREDENTIALS.client_secret == null) {
         console.error('Missing FORGE_CLIENT_ID or FORGE_CLIENT_SECRET env. variables.');
-        return;
     }
     
     let app = express();
