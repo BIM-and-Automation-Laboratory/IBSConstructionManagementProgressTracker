@@ -68,7 +68,7 @@ Open [http://localhost:3000] on your browser to view the project.
 - [x] Setup Forge viewer for 3D model viewing
 - [x] Setup automatic colour change of model component based on installation status in MongoDB documents
 - [ ] Setup Real-time colour change with Pusher and Node.js
-- [ ] Setup Charts in React.js client by embedding SDK from Mongo Charts
+- [x] Setup Charts in React.js client by embedding SDK from Mongo Charts
   
 :warning:__Disclaimer__: Please note that this is still an ongoing project and is under heavy development prone to constant breaking changes. 
 
